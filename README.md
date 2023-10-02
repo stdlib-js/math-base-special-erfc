@@ -71,43 +71,30 @@ The [complementary error function][complementary-error-function] can also be exp
 
 <!-- /.intro -->
 
+<section class="installation">
 
+## Installation
+
+```bash
+npm install @stdlib/math-base-special-erfc
+```
+
+Alternatively,
+
+-   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm` branch][esm-url].
+-   If you are using Deno, visit the [`deno` branch][deno-url].
+-   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd` branch][umd-url].
+
+The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
+
+</section>
 
 <section class="usage">
 
 ## Usage
 
-To use in Observable,
-
 ```javascript
-erfc = require( 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-erfc@umd/browser.js' )
-```
-The previous example will load the latest bundled code from the umd branch. Alternatively, you may load a specific version by loading the file from one of the [tagged bundles](https://github.com/stdlib-js/math-base-special-erfc/tags). For example,
-
-```javascript
-erfc = require( 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-erfc@v0.1.0-umd/browser.js' )
-```
-
-To vendor stdlib functionality and avoid installing dependency trees for Node.js, you can use the UMD server build:
-
-```javascript
-var erfc = require( 'path/to/vendor/umd/math-base-special-erfc/index.js' )
-```
-
-To include the bundle in a webpage,
-
-```html
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-erfc@umd/browser.js"></script>
-```
-
-If no recognized module system is present, access bundle contents via the global scope:
-
-```html
-<script type="text/javascript">
-(function () {
-    window.erfc;
-})();
-</script>
+var erfc = require( '@stdlib/math-base-special-erfc' );
 ```
 
 #### erfc( x )
@@ -145,14 +132,9 @@ var y = erfc( NaN );
 
 <!-- eslint no-undef: "error" -->
 
-```html
-<!DOCTYPE html>
-<html lang="en">
-<body>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/array-base-linspace@umd/browser.js"></script>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-erfc@umd/browser.js"></script>
-<script type="text/javascript">
-(function () {
+```javascript
+var linspace = require( '@stdlib/array-base-linspace' );
+var erfc = require( '@stdlib/math-base-special-erfc' );
 
 var x = linspace( -10.0, 10.0, 100 );
 
@@ -160,11 +142,6 @@ var i;
 for ( i = 0; i < x.length; i++ ) {
     console.log( 'x: %d, erfc(x): %d', x[ i ], erfc( x[ i ] ) );
 }
-
-})();
-</script>
-</body>
-</html>
 ```
 
 </section>
@@ -173,7 +150,92 @@ for ( i = 0; i < x.length; i++ ) {
 
 <!-- C interface documentation. -->
 
+* * *
 
+<section class="c">
+
+## C APIs
+
+<!-- Section to include introductory text. Make sure to keep an empty line after the intro `section` element and another before the `/section` close. -->
+
+<section class="intro">
+
+</section>
+
+<!-- /.intro -->
+
+<!-- C usage documentation. -->
+
+<section class="usage">
+
+### Usage
+
+```c
+#include "stdlib/math/base/special/erfc.h"
+```
+
+#### stdlib_base_erfc( x )
+
+Evaluates the [complementary error function][complementary-error-function].
+
+```c
+double out = stdlib_base_erfc( 2.0 );
+// returns ~0.0047
+
+out = stdlib_base_erfc( -1.0 );
+// returns ~1.8427
+```
+
+The function accepts the following arguments:
+
+-   **x**: `[in] double` input value.
+
+```c
+double stdlib_base_erfc( const double x );
+```
+
+</section>
+
+<!-- /.usage -->
+
+<!-- C API usage notes. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
+
+<section class="notes">
+
+</section>
+
+<!-- /.notes -->
+
+<!-- C API usage examples. -->
+
+<section class="examples">
+
+### Examples
+
+```c
+#include "stdlib/math/base/special/erfc.h"
+#include <stdlib.h>
+#include <stdio.h>
+
+int main( void ) {
+    const double x[] = { -10.0, -7.78, -5.56, -3.33, -1.11, 1.11, 3.33, 5.56, 7.78, 10.0 };
+    
+    double v;
+    int i;
+    for ( i = 0; i < 10; i++ ) {
+        v = stdlib_base_erfc( x[ i ] );
+        printf( "x: %lf, erfc(x): %lf\n", x[ i ], v );
+    }
+}
+```
+
+</section>
+
+<!-- /.examples -->
+
+</section>
+
+<!-- /.c -->
 
 <!-- Section for related `stdlib` packages. Do not manually edit this section, as it is automatically populated. -->
 
@@ -225,8 +287,8 @@ Copyright &copy; 2016-2023. The Stdlib [Authors][stdlib-authors].
 [npm-image]: http://img.shields.io/npm/v/@stdlib/math-base-special-erfc.svg
 [npm-url]: https://npmjs.org/package/@stdlib/math-base-special-erfc
 
-[test-image]: https://github.com/stdlib-js/math-base-special-erfc/actions/workflows/test.yml/badge.svg?branch=v0.1.0
-[test-url]: https://github.com/stdlib-js/math-base-special-erfc/actions/workflows/test.yml?query=branch:v0.1.0
+[test-image]: https://github.com/stdlib-js/math-base-special-erfc/actions/workflows/test.yml/badge.svg?branch=main
+[test-url]: https://github.com/stdlib-js/math-base-special-erfc/actions/workflows/test.yml?query=branch:main
 
 [coverage-image]: https://img.shields.io/codecov/c/github/stdlib-js/math-base-special-erfc/main.svg
 [coverage-url]: https://codecov.io/github/stdlib-js/math-base-special-erfc?branch=main
@@ -257,11 +319,11 @@ Copyright &copy; 2016-2023. The Stdlib [Authors][stdlib-authors].
 
 <!-- <related-links> -->
 
-[@stdlib/math/base/special/erf]: https://github.com/stdlib-js/math-base-special-erf/tree/umd
+[@stdlib/math/base/special/erf]: https://github.com/stdlib-js/math-base-special-erf
 
-[@stdlib/math/base/special/erfinv]: https://github.com/stdlib-js/math-base-special-erfinv/tree/umd
+[@stdlib/math/base/special/erfinv]: https://github.com/stdlib-js/math-base-special-erfinv
 
-[@stdlib/math/base/special/erfcinv]: https://github.com/stdlib-js/math-base-special-erfcinv/tree/umd
+[@stdlib/math/base/special/erfcinv]: https://github.com/stdlib-js/math-base-special-erfcinv
 
 <!-- </related-links> -->
 
