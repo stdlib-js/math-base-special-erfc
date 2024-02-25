@@ -78,7 +78,7 @@ The [complementary error function][complementary-error-function] can also be exp
 ## Usage
 
 ```javascript
-import erfc from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-erfc@esm/index.mjs';
+import erfc from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-erfc@v0.2.1-esm/index.mjs';
 ```
 
 #### erfc( x )
@@ -123,7 +123,7 @@ var y = erfc( NaN );
 <script type="module">
 
 import linspace from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-base-linspace@esm/index.mjs';
-import erfc from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-erfc@esm/index.mjs';
+import erfc from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-erfc@v0.2.1-esm/index.mjs';
 
 var x = linspace( -10.0, 10.0, 100 );
 
