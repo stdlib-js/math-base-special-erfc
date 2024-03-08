@@ -78,6 +78,11 @@ The [complementary error function][complementary-error-function] can also be exp
 ## Usage
 
 ```javascript
+import erfc from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-erfc@deno/mod.js';
+```
+The previous example will load the latest bundled code from the deno branch. Alternatively, you may load a specific version by loading the file from one of the [tagged bundles](https://github.com/stdlib-js/math-base-special-erfc/tags). For example,
+
+```javascript
 import erfc from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-erfc@v0.2.2-deno/mod.js';
 ```
 
@@ -118,7 +123,7 @@ var y = erfc( NaN );
 
 ```javascript
 import linspace from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-base-linspace@deno/mod.js';
-import erfc from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-erfc@v0.2.2-deno/mod.js';
+import erfc from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-erfc@deno/mod.js';
 
 var x = linspace( -10.0, 10.0, 100 );
 
