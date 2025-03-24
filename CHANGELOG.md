@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2025-02-03)
+## Unreleased (2025-03-24)
 
 <section class="reverts">
 
@@ -22,6 +22,7 @@
 
 <details>
 
+-   [`e0d7522`](https://github.com/stdlib-js/stdlib/commit/e0d7522fc5f65cbb7e949eeed509a45b208008ec) - **bench:** update random value generation [(#6327)](https://github.com/stdlib-js/stdlib/pull/6327) _(by Harsh, Athan Reines)_
 -   [`ff25e13`](https://github.com/stdlib-js/stdlib/commit/ff25e1324e1507cc076078e82badce7fdf7915f6) - **docs:** remove excess whitespace _(by Philipp Burckhardt)_
 -   [`b0e68c5`](https://github.com/stdlib-js/stdlib/commit/b0e68c5bc8ee985794eb2ea1791c9337cd15fbd0) - **chore:** update to modern benchmark Makefile _(by Philipp Burckhardt)_
 -   [`dbbb0ba`](https://github.com/stdlib-js/stdlib/commit/dbbb0bab688e9a2de22d967a57eeb31738b93340) - **revert:** chore: update to modern benchmark Makefile _(by Philipp Burckhardt)_
@@ -37,8 +38,10 @@
 
 ### Contributors
 
-A total of 1 person contributed to this release. Thank you to this contributor:
+A total of 3 people contributed to this release. Thank you to the following contributors:
 
+-   Athan Reines
+-   Harsh
 -   Philipp Burckhardt
 
 </section>
