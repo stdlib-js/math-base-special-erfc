@@ -4,12 +4,13 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2025-10-01)
+## Unreleased (2025-10-02)
 
 <section class="reverts">
 
 ### Reverts
 
+-   [`4a75f6d`](https://github.com/stdlib-js/stdlib/commit/4a75f6df054e6d718e40a37737938996ddd43006) - undo commits adding tests for full code coverage
 -   [`dbbb0ba`](https://github.com/stdlib-js/stdlib/commit/dbbb0bab688e9a2de22d967a57eeb31738b93340) - chore: update to modern benchmark Makefile
 
 </section>
@@ -22,6 +23,7 @@
 
 <details>
 
+-   [`4a75f6d`](https://github.com/stdlib-js/stdlib/commit/4a75f6df054e6d718e40a37737938996ddd43006) - **revert:** undo commits adding tests for full code coverage _(by Philipp Burckhardt)_
 -   [`3c033a4`](https://github.com/stdlib-js/stdlib/commit/3c033a4ba718f4383126edcdf6fc974950d0ead8) - **test:** add tests to achieve full coverage in `erf`, `erfc`, `erfcinv`, `erfcx`, and `erfinv` _(by Philipp Burckhardt)_
 -   [`86edcb5`](https://github.com/stdlib-js/stdlib/commit/86edcb559be453cb7d1156076bfc940a37a39af0) - **chore:** add structured package data for packages in `math/base/special` [(#8054)](https://github.com/stdlib-js/stdlib/pull/8054) _(by Gunj Joshi, Athan Reines)_
 -   [`f9aa653`](https://github.com/stdlib-js/stdlib/commit/f9aa6535cea3c4a56fde6aba6914405fd25c0bff) - **test:** use approximate equality for native addon tests _(by Philipp Burckhardt)_
