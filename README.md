@@ -78,6 +78,11 @@ The [complementary error function][complementary-error-function] can also be exp
 ## Usage
 
 ```javascript
+import erfc from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-erfc@esm/index.mjs';
+```
+The previous example will load the latest bundled code from the esm branch. Alternatively, you may load a specific version by loading the file from one of the [tagged bundles](https://github.com/stdlib-js/math-base-special-erfc/tags). For example,
+
+```javascript
 import erfc from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-erfc@v0.2.5-esm/index.mjs';
 ```
 
@@ -124,7 +129,7 @@ var y = erfc( NaN );
 
 import uniform from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-array-uniform@esm/index.mjs';
 import logEachMap from 'https://cdn.jsdelivr.net/gh/stdlib-js/console-log-each-map@esm/index.mjs';
-import erfc from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-erfc@v0.2.5-esm/index.mjs';
+import erfc from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-erfc@esm/index.mjs';
 
 var opts = {
     'dtype': 'float64'
