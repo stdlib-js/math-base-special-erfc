@@ -80,7 +80,7 @@ The [complementary error function][complementary-error-function] can also be exp
 To use in Observable,
 
 ```javascript
-erfc = require( 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-erfc@umd/browser.js' )
+erfc = require( 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-erfc@v0.2.5-umd/browser.js' )
 ```
 
 To vendor stdlib functionality and avoid installing dependency trees for Node.js, you can use the UMD server build:
@@ -92,7 +92,7 @@ var erfc = require( 'path/to/vendor/umd/math-base-special-erfc/index.js' )
 To include the bundle in a webpage,
 
 ```html
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-erfc@umd/browser.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-erfc@v0.2.5-umd/browser.js"></script>
 ```
 
 If no recognized module system is present, access bundle contents via the global scope:
@@ -146,7 +146,7 @@ var y = erfc( NaN );
 <body>
 <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/random-array-uniform@umd/browser.js"></script>
 <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/console-log-each-map@umd/browser.js"></script>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-erfc@umd/browser.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-erfc@v0.2.5-umd/browser.js"></script>
 <script type="text/javascript">
 (function () {
 
