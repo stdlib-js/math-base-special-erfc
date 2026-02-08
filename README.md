@@ -78,7 +78,7 @@ The [complementary error function][complementary-error-function] can also be exp
 ## Usage
 
 ```javascript
-import erfc from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-erfc@deno/mod.js';
+import erfc from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-erfc@v0.2.5-deno/mod.js';
 ```
 
 #### erfc( x )
@@ -119,7 +119,7 @@ var y = erfc( NaN );
 ```javascript
 import uniform from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-array-uniform@deno/mod.js';
 import logEachMap from 'https://cdn.jsdelivr.net/gh/stdlib-js/console-log-each-map@deno/mod.js';
-import erfc from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-erfc@deno/mod.js';
+import erfc from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-erfc@v0.2.5-deno/mod.js';
 
 var opts = {
     'dtype': 'float64'
